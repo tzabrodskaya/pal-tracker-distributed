@@ -7,8 +7,8 @@ applications:
   instances: 1
   env:
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
-      MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE: '*'
-      MANAGEMENT_HEALTH_PROBES_ENABLED: true
+    MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE: '*'
+    MANAGEMENT_HEALTH_PROBES_ENABLED: true
   services:
   - tracker-allocations-database
   - tracker-service-registry
