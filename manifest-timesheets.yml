@@ -7,8 +7,9 @@ applications:
   instances: 1
   env:
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
-    MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE: '*'
     MANAGEMENT_HEALTH_PROBES_ENABLED: true
+    GRANT_TYPE: client_credentials
   services:
   - tracker-timesheets-database
   - tracker-service-registry
+  - tracker-sso
